@@ -5,9 +5,9 @@ import menu from './menu.png';
 import ecommerce from './online-shop.png';
 import social from './social-media.png';
 import image2 from './addToCart.jpg';
-import step1 from './iniciar.png';
-import step2 from './idea.png';
-import step3 from './seleccionar.png';
+import step2 from './iniciar.png';
+import step3 from './idea.png';
+import step1 from './seleccionar.png';
 import step4 from './entrega.png';
 
 export {

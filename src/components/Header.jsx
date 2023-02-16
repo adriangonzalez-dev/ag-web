@@ -4,7 +4,7 @@ import './styles.css'
 
 export const Header = () => {
   return (
-    <nav className="navbar navbar-expand-md bg-body-tertiary bg-color1 w-100 sticky-top">
+    <nav className="navbar navbar-expand-md bg-body-tertiary bg-color1 w-100 sticky-top p-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt='logo' />
@@ -24,12 +24,12 @@ export const Header = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink className={`nav-link ${(isActive)=>isActive ? 'active' : ''}`} aria-current="page" href="#">
-                Home
+                Inicio
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to='/#section'>
-                Link
+                Nosotros
               </NavLink>
             </li>
             <li className="nav-item dropdown bg-color1">
@@ -45,12 +45,7 @@ export const Header = () => {
               <ul className="dropdown-menu ">
                 <li>
                   <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
+                    Páginas Web Responsive
                   </a>
                 </li>
                 <li>
@@ -58,13 +53,13 @@ export const Header = () => {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    Tiendas Online
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link">Disabled</a>
+              <Link className="nav-link">Contacto</Link>
             </li>
           </ul>
         </div>

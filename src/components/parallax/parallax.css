@@ -1,0 +1,14 @@
+.parallax {
+    height: fit-content;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax1bg{
+  background-image: url('../../assets/background1.jpg');
+}
+
+.parallax2bg{
+    background-image: url('../../assets/background2.jpg');
+  }

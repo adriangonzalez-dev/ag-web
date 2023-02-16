@@ -1,18 +1,4 @@
 
-.parallax {
-    height: fit-content;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax1bg{
-  background-image: url('../assets/background1.jpg');
-}
-
-.parallax2bg{
-    background-image: url('../assets/background2.jpg');
-  }
 
 .firstRow {
     background-color: var(--color4);
@@ -30,7 +16,8 @@
 }
 
 .bgStep {
-    background-color: var(--color4);
+    background-color: var(--color4-alpha);
+    border-radius: 5px;
 }
 
 article.card {
