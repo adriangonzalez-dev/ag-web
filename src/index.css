@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+:root {
+  --primaryFont: 'Titillium Web', sans-serif;
+  --color1: #112B3C;
+  --color2: #205375;
+  --color3: #F66B0E;
+  --color4: #EFEFEF;
+  --color4-alpha: #efefefbf;
+
+  --colorCard1: #EFF5F5;
+  --colorCard2: #D6E4E5;
+  --colorCard3: #497174;
+  --colorCard4: #EB6440;
+  --colorCard1-alpha: rgba(239, 245, 245,.75);
+  --colorCard2-alpha: rgba(214, 228, 229,.75);
+  --colorCard3-alpha: rgba(73, 113, 116,.75);
+  --colorCard4-alpha: rgba(235, 100, 64,.75);
+  --colorCard5-alpha: rgba(185, 224, 255,.75);
+  --colorCard6-alpha: rgba(233, 69, 96,.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: var(--primaryFont);
+}
+
+bg-color1 {
+  background-color: var(--color1) !important;
+  color: var(--color4) !important;
+}
+
+bg-color2 {
+  background-color: var(--color4);
+  color: #112B3C;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

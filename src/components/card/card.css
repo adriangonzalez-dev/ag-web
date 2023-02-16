@@ -1,0 +1,12 @@
+.cardHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 180px;
+    flex-direction: column;
+}
+
+.cardHome img {
+    width: 50px;
+}
