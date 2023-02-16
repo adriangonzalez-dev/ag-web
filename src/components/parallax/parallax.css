@@ -6,9 +6,13 @@
   background-size: cover;
 }
 .parallax1bg{
-  background-image: url('../../assets/background1.jpg');
+  background-image: url('../../assets/background1.webp');
 }
 
 .parallax2bg{
-    background-image: url('../../assets/background2.jpg');
+    background-image: url('../../assets/background2.webp');
+  }
+
+  .parallax3bg{
+    background-image: url('../../assets/contact-image.webp');
   }

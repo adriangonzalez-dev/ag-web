@@ -1,0 +1,13 @@
+article.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: var(--color1)
+}
+
+article.card img {
+    height: 60px;
+    width: auto;
+}

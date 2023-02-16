@@ -1,11 +1,9 @@
 .navbar-brand img {
-    width: 70px;
+    width: auto;
+    height: 70px;
 }
 
-.bg-body-tertiary {
-    background-color: var(--color1) !important;
-    color: var(--color4) !important;
-}
+
 
 .nav-link {
     color: var(--color4) !important;

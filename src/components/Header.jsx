@@ -1,10 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.webp'
 import './styles.css'
 
 export const Header = () => {
   return (
-    <nav className="navbar navbar-expand-md bg-body-tertiary bg-color1 w-100 sticky-top p-3">
+    <nav className="navbar navbar-expand-md bg-body-tertiary w-100 sticky-top p-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt='logo' />
