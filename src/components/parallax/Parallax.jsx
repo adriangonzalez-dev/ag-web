@@ -1,6 +1,7 @@
+import { memo } from 'react'
 import './parallax.css'
 
-export const Parallax = ({children, imageClass}) => {
+export const Parallax = memo(({children, imageClass}) => {
   return (
     <div className={`
     container-fluid 
@@ -8,8 +9,9 @@ export const Parallax = ({children, imageClass}) => {
     d-flex 
     align-items-center 
     justify-content-center 
-    opacity-75`}>
+    opacity-75`}
+    >
         {children}
     </div>
   )
-}
+})
