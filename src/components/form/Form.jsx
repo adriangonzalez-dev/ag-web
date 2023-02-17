@@ -22,8 +22,12 @@ export const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(values)
-    const {data} = await sendMail.post('/api/mail', values);
-    console.log(data)
+    try {
+      const {data} = await sendMail.post('/api/mail', values);
+      console.log(data)
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (
