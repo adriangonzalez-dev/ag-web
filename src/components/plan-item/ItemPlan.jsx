@@ -1,6 +1,12 @@
 import './cardprice.css'
 
 export const ItemPlan = ({title, description, checkout, list}) => {
+
+  const formatText = (text)=> {
+    return text.replaceAll(' ', '%20')
+  }
+  const link = formatText(`Hola! Estoy interesado en el ${title}!`);
+
   return (
     <div className="card col-12 col-md-3 mb-3 cardPrice">
       <h3 className="mt-3">{title}</h3>
@@ -14,7 +20,7 @@ export const ItemPlan = ({title, description, checkout, list}) => {
             list.map((item)=><li key={item} className='mt-2 listPrice'><span>{item}</span></li>)
         }
       </ul>
-      <a className="btn btn-info mt-auto mb-1">
+      <a className="btn btn-info mt-auto mb-1" href={`https://wa.me/1165233919?text=${link}`} target='_blank'>
         <i className="bi bi-whatsapp"></i> Solicitar
       </a>
     </div>

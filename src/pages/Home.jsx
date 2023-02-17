@@ -33,7 +33,7 @@ export const Home = () => {
         </section>
         <a name="process" id="process"></a> 
         <Parallax imageClass='parallax2bg'>
-            <section className='container row bgStep mt-3'>
+            <section className='container row bgStep mt-3 mb-3'>
                 <h2 className='col-12 text-center m-3'>¿CÓMO ES EL PROCESO DE DESARROLLO?</h2>
                 {
                     steps.map(step=><Card2
