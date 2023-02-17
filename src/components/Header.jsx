@@ -1,14 +1,17 @@
-import { Link, NavLink } from "react-router-dom";
-import logo from '../assets/logo.webp'
+import { useEffect } from 'react';
+import logo from '../assets/logo.png'
 import './styles.css'
 
 export const Header = () => {
+  useEffect(() => {
+    console.log('me renderice')
+  }, []);
   return (
-    <nav className="navbar navbar-expand-md bg-body-tertiary w-100 sticky-top">
+    <nav className="navbar navbar-expand-md bg-body-tertiary w-100">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <a className="navbar-brand">
           <img src={logo} alt='logo' />
-        </Link>
+        </a>
         <button
           className="navbar-toggler navbar-dark"
           type="button"
@@ -23,7 +26,7 @@ export const Header = () => {
         <div className="collapse navbar-collapse p-3" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className={`nav-link ${(isActive)=>isActive ? 'active' : ''}`} aria-current="page" href="#home">
+              <a className='nav-link'  aria-current="page" href="#home">
                 Inicio
               </a>
             </li>

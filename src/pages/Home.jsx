@@ -1,11 +1,7 @@
 import './style.css'
-import { Card } from '../components/card/Card';
-import {image2} from '../assets'
-import { Parallax } from '../components/parallax/Parallax';
+import { Card, Parallax, Card2, ItemPlan, Form } from '../components';
+import {image2,background1,background2,background3 } from '../assets'
 import { cards, steps, planes } from '../assets/js/cards';
-import { Card2 } from '../components/card2/Card2';
-import { ItemPlan } from '../components/plan-item/ItemPlan';
-import { Form } from '../components/form/Form';
 
 export const Home = () => {
   return (
@@ -44,9 +40,8 @@ export const Home = () => {
 
                 }
             </section>
-            <a name="plan" id="plan"></a> 
         </Parallax>
-        <section className='container-fluid w-100 secondRow d-flex align-items-center justify-content-center' id='services'>
+        <section id="plan" className='container-fluid w-100 secondRow d-flex align-items-center justify-content-center'>
             <article className='container-fluid row m-3 d-flex align-items-start justify-justify-content-center'>
                 {
                     planes.map(plan=><ItemPlan 
@@ -58,10 +53,10 @@ export const Home = () => {
                 }
             </article>
         </section>
-        <Parallax imageClass='parallax3bg d-flex flex-column'>
+        <Parallax imageClass='parallax3bg d-flex flex-column h-auto'>
             <a name="contact" id="contact"></a> 
             <h2 className='mt-3 text-white text-shadow'><b>CONSULTANOS</b></h2>
-            <b className='text-white text-shadow fs-5'>Realiza tus consultas y nos pondremos en contacto a la brevedad!</b>
+            <b className='text-white text-shadow fs-5 text-center'>Realiza tus consultas y nos pondremos en contacto a la brevedad!</b>
             <Form/>
         </Parallax>
     </>

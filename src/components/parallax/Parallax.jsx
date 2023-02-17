@@ -1,7 +1,7 @@
-import { memo } from 'react'
+
 import './parallax.css'
 
-export const Parallax = memo(({children, imageClass}) => {
+export const Parallax = ({children, imageClass}) => {
   return (
     <div className={`
     container-fluid 
@@ -14,4 +14,4 @@ export const Parallax = memo(({children, imageClass}) => {
         {children}
     </div>
   )
-})
+}

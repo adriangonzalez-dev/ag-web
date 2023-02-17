@@ -1,13 +1,12 @@
-import { Header } from "./components/Header"
-import { Footer } from "./components/footer/Footer"
-import { RouterApp } from "./router/RouterApp"
+import { Header, Footer } from "./components";
+import { Home } from "./pages";
 
 function App() {
 
   return (
     <>
       <Header/>
-        <RouterApp/>
+        <Home/>
       <Footer/>
     </>
   )

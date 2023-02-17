@@ -17,7 +17,10 @@ export const ItemPlan = ({title, description, checkout, list}) => {
       <hr className="w-100" />
       <ul className='w-100 d-flex flex-column align-items-center justify-content-center p-0'>
         {
-            list.map((item)=><li key={item} className='mt-2 listPrice'><span>{item}</span></li>)
+            list.map((item)=><li key={item} className='mt-2 list-li container-fluid row align-items-start'>
+                <span className='listPrice col-1'></span>
+                <span className='col-11 d-flex align-items-center justify-content-start text-start'>{item}</span>
+              </li>)
         }
       </ul>
       <a className="btn btn-info mt-auto mb-1" href={`https://wa.me/1165233919?text=${link}`} target='_blank'>
