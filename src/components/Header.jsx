@@ -1,11 +1,9 @@
-import { useEffect } from 'react';
+
 import logo from '../assets/logo.png'
 import './styles.css'
 
 export const Header = () => {
-  useEffect(() => {
-    console.log('me renderice')
-  }, [logo]);
+
   return (
     <nav className="navbar navbar-expand-md bg-body-tertiary w-100">
       <div className="container-fluid">

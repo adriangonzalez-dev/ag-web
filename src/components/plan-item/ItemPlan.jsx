@@ -23,7 +23,7 @@ export const ItemPlan = ({title, description, checkout, list}) => {
               </li>)
         }
       </ul>
-      <a className="btn btn-info mt-auto mb-1" href={`https://wa.me/1165233919?text=${link}`} target='_blank'>
+      <a className="btn btn-info mt-auto mb-1" href={`https://wa.me/${import.meta.env.VITE_PHONE}?text=${link}`} target='_blank'>
         <i className="bi bi-whatsapp"></i> Solicitar
       </a>
     </div>
